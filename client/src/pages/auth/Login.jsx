@@ -10,6 +10,8 @@ export default function Login() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const ReCAPTCHA = import.meta.VITE_RECAPTCHA_SITE_KEY;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -37,7 +39,7 @@ export default function Login() {
       />
 
       <ReCAPTCHA
-        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+        sitekey={ReCAPTCHA}
         onChange={(token) => setRecaptchaToken(token)}
       />
 

@@ -7,7 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
 dist
 dist-ssr
 *.local
@@ -22,5 +21,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Thư mục chứa các dependencies
+/node_modules
+
+# Thư mục node_modules trong thư mục server
+/server/node_modules
+
+# Các file tạm thời hoặc file môi trường
+.env
+.DS_Store
+# ... các mục khác
 
 .env

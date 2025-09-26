@@ -9,3 +9,6 @@ git push -u origin main
 git remote add origin https://github.com/HuyNguyenQuangzz/CSN.git
 git branch -M main
 git push -u origin main
+
+# Xóa thư mục node_modules nằm trong server khỏi Git Index
+git rm -r --cached server/node_modules
